@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.target.product.service.ProductServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-03-09T04:48:37" hostname="DESKTOP-SD1THAN" time="0.176">
+  <properties/>
+  <testcase name="Testing getcurrency when input is valid " classname="com.target.product.service.ProductServiceTest" time="0.124"/>
+  <testcase name="testing getCurrency when product is not found in db " classname="com.target.product.service.ProductServiceTest" time="0.001"/>
+  <testcase name="testing getCurrency when it throws an exception" classname="com.target.product.service.ProductServiceTest" time="0.005"/>
+  <testcase name="Testing getProductName when product name is found in the External API" classname="com.target.product.service.ProductServiceTest" time="0.03"/>
+  <testcase name="Testing getProductName when product name is Not found in the External API" classname="com.target.product.service.ProductServiceTest" time="0.006"/>
+  <testcase name="Testing getProductName when calling External API throws an exception" classname="com.target.product.service.ProductServiceTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
