@@ -71,53 +71,22 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.ProductServiceTest">
+  <component name="RunManager" selected="Application.ProductApplication">
+    <configuration name="ProductApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.target.product.service.ProductApplication" />
+      <module name="product.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ProductServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProductServiceTest.Testing getProductName when calling External API throws an exception" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest.Testing getProductName when calling External API throws an exception&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="ProductServiceTest.Testing getProductName when product name is Not found in the External API" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -139,12 +108,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ProductServiceTest.Testing getProductName when product name is found in the External API" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ProductServiceTest.Testing update Currency when data returned is null while saving to db" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest.Testing getProductName when product name is found in the External API&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest.Testing update Currency when data returned is null while saving to db&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -159,12 +128,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ProductServiceTest.testing getCurrency when it throws an exception" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ProductServiceTest.testing getCurrency when product is not found in db " type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest.testing getCurrency when it throws an exception&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest.testing getCurrency when product is not found in db &quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceTest.testing update currency value to database when product is Not found " type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.target.product.service.ProductServiceTest.testing update currency value to database when product is Not found &quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -247,20 +236,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ProductApplication" />
       <item itemvalue="Gradle.Tests in 'product.test'" />
-      <item itemvalue="Gradle.ProductServiceTest.testing getCurrency when it throws an exception" />
-      <item itemvalue="Gradle.ProductServiceTest.Testing getProductName when product name is found in the External API" />
-      <item itemvalue="Gradle.ProductServiceTest.Testing getProductName when calling External API throws an exception" />
+      <item itemvalue="Gradle.ProductServiceTest.testing update currency value to database when product is Not found " />
+      <item itemvalue="Gradle.ProductServiceTest.Testing update Currency when data returned is null while saving to db" />
       <item itemvalue="Gradle.ProductServiceTest.Testing getProductName when product name is Not found in the External API" />
-      <item itemvalue="Gradle.ProductServiceTest" />
+      <item itemvalue="Gradle.ProductServiceTest.testing getCurrency when product is not found in db " />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ProductServiceTest" />
+        <item itemvalue="Gradle.ProductServiceTest.testing getCurrency when product is not found in db " />
+        <item itemvalue="Application.ProductApplication" />
         <item itemvalue="Gradle.ProductServiceTest.Testing getProductName when product name is Not found in the External API" />
-        <item itemvalue="Gradle.ProductServiceTest.Testing getProductName when product name is found in the External API" />
-        <item itemvalue="Gradle.ProductServiceTest.Testing getProductName when calling External API throws an exception" />
-        <item itemvalue="Gradle.ProductServiceTest.testing getCurrency when it throws an exception" />
+        <item itemvalue="Gradle.ProductServiceTest.Testing update Currency when data returned is null while saving to db" />
+        <item itemvalue="Gradle.ProductServiceTest.testing update currency value to database when product is Not found " />
       </list>
     </recent_temporary>
   </component>
@@ -297,10 +286,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="470" y="284" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1366.728@0.0.1366.728" timestamp="1583699631753" />
-    <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1583726848881">
+    <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1583797553111">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583726848881" />
+    <state x="488" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583797553111" />
     <state x="421" y="55" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583698668971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -309,46 +298,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1583616342524" />
-    <state width="441" height="466" key="DebuggerActiveHint" timestamp="1583618894057">
+    <state width="452" height="466" key="DebuggerActiveHint" timestamp="1583796391982">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="441" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1583618894057" />
+    <state width="452" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1583796391982" />
     <state x="462" y="121" key="FileChooserDialogImpl" timestamp="1583699388091">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583699388091" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583729306159">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1583811825834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583729306159" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583729306159">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583811825834" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1583811825834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583729306159" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583729306159">
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583811825834" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1583811825834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583729306159" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583729306159">
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583811825834" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1583811825834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583729306159" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1583727907634">
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583811825834" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1583811825835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583727907634" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1583727907634">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583811825835" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1583811825835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583727907634" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1583727907634">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583811825835" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1583811825834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583727907634" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1583727907634">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583811825834" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1583811825835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583727907634" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583811825835" />
     <state x="186" y="0" key="SettingsEditor" timestamp="1583699634710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -362,89 +351,69 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
-          <line>40</line>
+          <line>43</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
-          <line>42</line>
+          <line>45</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
-          <line>49</line>
+          <line>52</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
-          <line>53</line>
+          <line>56</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
+          <line>80</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
+          <line>82</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
+          <line>85</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
+          <line>116</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
+          <line>117</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/groovy/com/target/product/service/ProductServiceTest.groovy</url>
+          <line>119</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/target/product/service/service/ProductService.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

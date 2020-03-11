@@ -1,8 +1,10 @@
 package com.target.product.service
 
+import com.target.product.service.Exception.DataNotFoundException
 import com.target.product.service.domain.CurrentPrice
 import com.target.product.service.domain.Item
 import com.target.product.service.domain.Product
+import com.target.product.service.domain.ProductDesc
 import com.target.product.service.domain.ProductDescription
 import com.target.product.service.domain.ProductVO
 import com.target.product.service.entity.ProductEntity
@@ -16,6 +18,7 @@ class ProductServiceTest extends Specification {
     RestTemplate restTemplate=Mock(RestTemplate)
 
     ProductService productService=new ProductService(productRepository,restTemplate)
+
 
     def "Testing getcurrency when input is valid "() {
         given:
@@ -35,12 +38,12 @@ class ProductServiceTest extends Specification {
         given:
         Integer productId=13234678
         ProductEntity productEntity= new ProductEntity()
-        productRepository.findByProductId(productId)>>productEntity
+        productRepository.findByProductId(productId)>>null
         CurrentPrice currentPrice=new CurrentPrice()
         when:
-        def result = productService.getProductCurrency(productId)
+        def result=productService.getProductCurrency(productId)
         then:
-        currentPrice.equals(result)
+        result.equals(currentPrice)
     }
 
     def "testing getCurrency when it throws an exception"(){
@@ -80,7 +83,7 @@ class ProductServiceTest extends Specification {
          productService.getProductName(productId)
 
         then:
-        thrown(Exception)
+        thrown(DataNotFoundException)
     }
     def "Testing getProductName when calling External API throws an exception"(){
         given:Integer productId=13234678
@@ -90,5 +93,45 @@ class ProductServiceTest extends Specification {
 
         then:
         thrown(Exception)
+    }
+    def"testing update currency value to database when input is valid "(){
+        given:
+        Integer productId=13234678
+        ProductEntity productEntity= new ProductEntity(productId,13.23,"USD")
+        CurrentPrice currentPrice= new CurrentPrice(13.25,"US")
+        productRepository.findByProductId(productId) >> productEntity
+        ProductDesc productDesc= new ProductDesc(productId,"Big Tv",currentPrice)
+        ProductEntity resultEntity= new ProductEntity(productId,13.25,"US")
+
+        when:
+        def result= productService.updateProductValue(productDesc,productId)
+        then:
+        1 * productRepository.save(_) >> resultEntity
+        result.productName == productDesc.productName
+    }
+
+    def"testing update currency value to database when product is Not found "(){
+        given:
+        Integer productId=13234678
+        CurrentPrice currentPrice= new CurrentPrice(13.25,"US")
+        productRepository.findByProductId(productId) >> null
+        ProductDesc productDesc= new ProductDesc(productId,"Big Tv",currentPrice)
+        when:
+        productService.updateProductValue(productDesc,productId)
+        then:
+        thrown(DataNotFoundException)
+    }
+    def "Testing update Currency when data returned is null while saving to db"(){
+        given:
+        Integer productId=13234678
+        CurrentPrice currentPrice= new CurrentPrice(13.25,"US")
+        productRepository.findByProductId(productId) >> new ProductEntity(productId,13.23,"USD")
+        ProductDesc productDesc= new ProductDesc(productId,"Big Tv",currentPrice)
+        productRepository.save(_) >> Exception
+
+        when:
+        productService.updateProductValue(productDesc,productId)
+        then:
+        thrown Exception
     }
 }
